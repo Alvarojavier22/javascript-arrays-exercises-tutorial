@@ -3,4 +3,13 @@ let counts = {};
 
 // your code here
 
+let sinEspacios = par.toLowerCase().replace(/\s/g, '');
+let arrayLetras = sinEspacios.split("");
+
+for( let i=0; i<arrayLetras.length; i++){
+    const letras = arrayLetras[i];
+    if(counts[letras] == undefined) counts[letras] = 1;
+    else counts[letras] = counts[letras] + 1;
+}
+
 console.log(counts);
