@@ -10,8 +10,3 @@ let tasks = [
 ];
 
 //your code here
-let resultingNames = tasks.filter(function(tasks){
-    return tasks.done  === true
-})
-
-console.log(resultingNames);
